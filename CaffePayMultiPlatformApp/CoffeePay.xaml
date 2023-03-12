@@ -9,13 +9,14 @@
         
         <Label 
             x:Name="CreditsLb"
-            Text="You have 0 Ft"
             SemanticProperties.HeadingLevel="Level1"
             FontSize="32"
             VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            HorizontalOptions="Center">
+            <Label.Text>$"You have {credits} Ft"</Label.Text>
+            </Label>
 
-        <Button
+            <Button
             x:Name="PayOneCoffeeBtn"
             Text="Pay one Coffee"
             SemanticProperties.Hint="Pay coffee"
